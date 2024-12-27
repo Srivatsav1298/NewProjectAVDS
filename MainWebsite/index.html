@@ -46,7 +46,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <!-- <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li> -->
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
         <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
@@ -93,12 +93,11 @@
             <img src="assets/img/Amirtha.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Bharatanatyam Instructor</h2>
+            <h2>Mrs. Amirthavarshini Raju (Bharatanatyam Instructor)</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Amirtha comes from an artistic background where Bharatanatyam has been part of her legacy for 3 generations. She started learning Bharatanatyam since 5 years under her mother’s guidance and performed her Arangetram at the age of 13. Since then, she has performed, choreographed and acted dance dramas. Her passion is choreographing thematic performances. In addition to her experience, she also holds Master’s degree in Bharatanatyam and continue to teach & choreograph Bharatanatyam both in India and Norway. 
             </p>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
@@ -119,7 +118,7 @@
             <p class="py-3">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
+            </p> -->
           </div>
         </div>
         <br>
@@ -128,12 +127,13 @@
             <img src="assets/img/Amma.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>Divine Inspiration</h2>
+            <h2>Mrs. Hemamalini Raju (Divine Inspiration)</h2>
             <p class="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Hemamalini Raju is the mother and Guru of Ms Amirtha Raju who comes from traditional music and dance family background. She has completed her diploma and won KALAIMANI title from Thanjavur tamizh university she also been awarded Natya Kalaratna from Dubai tamil sangham. She had trained more than 100 students.
+
+              Her unique compositions are Bharathiyarin parimanal,Bhavayami Ramayanam , tamil Ashtapathi, and Krishna Leela mathuryam. She was a dedicated Sahaja Yoga practitioner and has choreographed for many spiritual scriptures and songs from various languages for international Sahaja yoga seminars. She has also trained her students for both physical and mental balance through meditation and dance. after her demise the school has been still taken up and run with same principle and guidance by her daughter and Senior students.
             </p>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
@@ -154,7 +154,7 @@
             <p class="py-3">
               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -277,14 +277,14 @@
     </section>/Skills Section -->
 
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- <section id="resume" class="resume section"> -->
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+      <!-- <div class="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <!-- <img src="assets/img/Resume.png"> -->
         <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-      </div><!-- End Section Title -->
+      <!-- </div>End Section Title --> -->
 
       <!-- <div class="container">
 
@@ -352,7 +352,7 @@
 
       </div> -->
 
-    </section><!-- /Resume Section -->
+    <!-- </section>/Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
@@ -759,43 +759,40 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contactform" class="form" onsubmit="sendMail(event)">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" id="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <!-- <input type="text" class="form-control" name="subject" placeholder="Subject" required=""> -->
+                  <input type="text" class="form-control" id="subject" placeholder="Your Subject" required>
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" id="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
-
               </div>
             </form>
           </div><!-- End Contact Form -->
 
         </div>
-
       </div>
-
     </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
@@ -814,11 +811,6 @@
           <span>©</span> <strong class="px-1 sitename">AV Danse Studio</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distribuited by <a href="https://themewagon.com">ThemeWagon</a> -->
         </div>
       </div>
     </div>
@@ -843,7 +835,14 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+        emailjs.init("iOd2fl5idKhemKiQl");
+    })();
+</script>
 
 </body>
 
