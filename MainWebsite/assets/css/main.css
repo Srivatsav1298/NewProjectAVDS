@@ -1451,6 +1451,12 @@ section,
   color: var(--accent-color);
 }
 
+.btn.btn-primary {
+  background-color: #f4ba55;
+  border-color: #f4ba55;
+  color: black;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
